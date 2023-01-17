@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QRegularExpression>
+#include <memory>
 #include <string>
 
 #include "../Controller/controller.h"

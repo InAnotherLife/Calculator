@@ -48,7 +48,7 @@ gcov_report:
 
 clean:
 	@rm -rf ./*.o ./*.a ./a.out ./$(REPORTNAME) ./GcovReport.info ./$(OUTTESTSNAME) ./a.out.dSYM
-	@rm -rf ./*.gcno ./*.gcda ./GcovReport ./GcovReport.info ../build-Calculator-* ./build-Calculator-*
+	@rm -rf ./*.gcno ./*.gcda ./GcovReport ./GcovReport.info ../build-Calculator-* /$(BUILDNAME)
 	@rm -rf ./$(OUTFILENAME) ./$(ARCHIVENAME).tar.gz
 	@rm -rf ./$(BUILDNAME) ./$(OUTDIRPATH) ./$(ARCHIVENAME) ./.qtc_clangd ./*.gch ./*.pro.user ./.vscode
 

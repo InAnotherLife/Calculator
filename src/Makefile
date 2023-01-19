@@ -59,7 +59,7 @@ linter:
 	clang-format -n ./$(TESTFILE) ./Controller/*.cc ./Controller/*.h ./Model/*.cc ./Model/*.h ./View/*.cc ./View/*.h
 
 cppcheck:
-	cppcheck --std=c++17 --language=c++ --enable=all --suppress=missingIncludeSystem ./$(TESTFILE) ./Controller/*.cc ./Controller/*.h ./Model/*.cc ./Model/*.h
+	cppcheck --std=c++17 --language=c++ --enable=all --suppress=missingIncludeSystem ./$(TESTFILE) ./Controller/*.* ./Model/*.*
 
 leaks:
 	@$(CC) -c $(SOURCES) $(TESTFILE)

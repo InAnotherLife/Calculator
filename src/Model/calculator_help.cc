@@ -2,23 +2,21 @@
 
 namespace my {
 
-unsigned short int Calculator::GetPreviousSym(int_type num) {
+int_type Calculator::GetPreviousSym(int_type num) {
   return (num > 0 ? input_expr_[num - 1] : 32);
 }
 
-unsigned short int Calculator::GetCurrentSym(int_type num) {
-  return input_expr_[num];
-}
+int_type Calculator::GetCurrentSym(int_type num) { return input_expr_[num]; }
 
-unsigned short int Calculator::GetSecondSym(int_type num) {
+int_type Calculator::GetSecondSym(int_type num) {
   return (num + 1 <= input_expr_len_ ? input_expr_[num + 1] : 32);
 }
 
-unsigned short int Calculator::GetThirdSym(int_type num) {
+int_type Calculator::GetThirdSym(int_type num) {
   return (num + 2 <= input_expr_len_ ? input_expr_[num + 2] : 32);
 }
 
-unsigned short int Calculator::GetFourthSym(int_type num) {
+int_type Calculator::GetFourthSym(int_type num) {
   return (num + 3 <= input_expr_len_ ? input_expr_[num + 3] : 32);
 }
 
@@ -91,7 +89,7 @@ void Calculator::IsNanOrInf() {
     error_num_ = 2;
 }
 
-unsigned short int Calculator::CountSym(int_type num) {
+int_type Calculator::CountSym(int_type num) {
   int_type CountSym = 0;
   for (int_type i = 0; i < input_expr_.length(); i++) {
     if (GetCurrentSym(i) == num) CountSym++;

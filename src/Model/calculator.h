@@ -34,16 +34,16 @@ class Calculator {
   void CheckScientificNotation();
   void FirtsCheckInputExpr();
   void SecondCheckInputExpr();
-  unsigned short int GetPreviousSym(int_type num);
-  unsigned short int GetCurrentSym(int_type num);
-  unsigned short int GetSecondSym(int_type num);
-  unsigned short int GetThirdSym(int_type num);
-  unsigned short int GetFourthSym(int_type num);
+  int_type GetPreviousSym(int_type num);
+  int_type GetCurrentSym(int_type num);
+  int_type GetSecondSym(int_type num);
+  int_type GetThirdSym(int_type num);
+  int_type GetFourthSym(int_type num);
   short int GetPriority(int_type sym);
   bool IsNumOrDot(int_type sym);
   bool IsFunc(int_type sym);
   void IsNanOrInf();
-  unsigned short int CountSym(int_type sym);
+  int_type CountSym(int_type sym);
   void ParseNum(int_type sym);
   void ParseMinus(int_type prev_sym, int_type curr_sym, int_type next_sym);
   void ParseOpt(int_type sym, short int head_stack_priority,

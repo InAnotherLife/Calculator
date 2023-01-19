@@ -79,9 +79,9 @@ void MainWindow::on_button_clean_clicked() {
 
 void MainWindow::on_button_backspace_clicked() {
   if (error_calc_) {
-    QString inputBackSpace = ui_->area_result->text();
-    inputBackSpace.chop(1);
-    ui_->area_result->setText(inputBackSpace);
+    QString input_back_space = ui_->area_result->text();
+    input_back_space.chop(1);
+    ui_->area_result->setText(input_back_space);
   }
 }
 

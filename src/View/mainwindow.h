@@ -8,8 +8,6 @@
 
 #include "../Controller/controller.h"
 
-#define MAX_INPUT_NUM_X 1000000000000000
-
 using std::string;
 
 QT_BEGIN_NAMESPACE

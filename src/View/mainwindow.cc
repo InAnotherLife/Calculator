@@ -9,7 +9,8 @@ MainWindow::MainWindow(QWidget *parent)
   ui_->setupUi(this);
   this->setWindowTitle("Calculator");
   setlocale(LC_ALL, "en_US.UTF-8");
-  error_calc_ = true, wait_push_ = false;
+  error_calc_ = true;
+  wait_push_ = false;
   connect(ui_->push_num_0, SIGNAL(clicked()), this, SLOT(push_symbol()));
   connect(ui_->push_num_1, SIGNAL(clicked()), this, SLOT(push_symbol()));
   connect(ui_->push_num_2, SIGNAL(clicked()), this, SLOT(push_symbol()));
